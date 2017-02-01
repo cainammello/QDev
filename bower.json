@@ -1,0 +1,27 @@
+{
+  "name": "qdev",
+  "description": "Web application for QDev software developer",
+  "main": "index.js",
+  "authors": [
+    "Cainã Mello"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "qdev"
+  ],
+  "homepage": "https://github.com/cainammello/QDev",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.1",
+    "angular-ui-router": "1.0.0-beta.3",
+    "angular-material": "^1.1.3",
+    "jquery": "^3.1.1"
+  }
+}

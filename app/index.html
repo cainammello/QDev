@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="QDev">
+<head>
+    <meta charset="UTF-8">
+    <title> QDev Software Developer</title>
+    <script src="../lib/angular/angular.js"></script>
+    <script src="../lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="module.js"></script>
+    <script src="routes.js"></script>
+
+    <script src="controllers/pages-controller.js.js"></script>
+
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+
+
+</head>
+<body ng-controller="_pagesController as pg">
+    <h1>QDev</h1>
+
+    <div ui-view=""></div>
+    <div ui-view="aboutUs"></div>
+
+</body>
+</html>
