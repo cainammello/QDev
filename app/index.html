@@ -3,22 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title> QDev Software Developer</title>
+
     <script src="../lib/angular/angular.js"></script>
+
     <script src="../lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../lib/jquery/dist/jquery.js"></script>
     <script src="module.js"></script>
     <script src="routes.js"></script>
 
-    <script src="controllers/pages-controller.js.js"></script>
+    <script src="controllers/pages-controller.js"></script>
+    <script src="controllers/tour-controller.js"></script>
+    <script src="controllers/projects-controller.js"></script>
+    <script src="controllers/aboutus-controller.js"></script>
+    <script src="controllers/news-controller.js"></script>
+    <script src="controllers/inovation-controller.js"></script>
+    <script src="controllers/contact-controller.js"></script>
 
-    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    <script src="assets/js/importHTML.js"></script>
 
+    <script src="../lib/tether/dist/js/tether.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="../lib/tether/dist/css/tether.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- BootStrap
+     <script src="../lib/angular-aria/angular-aria.js"></script>
+    <script src="../lib/angular-animate/angular-animate.js"></script>
+    <script src="../lib/angular-material/angular-material.js"></script>
+
+    <link rel="stylesheet" href="../lib/angular-material/angular-material.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    -->
+    <div id="includedContent1"></div>
 
 </head>
-<body ng-controller="_pagesController as pg">
-    <h1>QDev</h1>
 
-    <div ui-view=""></div>
+<body>
+
+    <div ui-view="tour"></div>
+
+    <div ui-view="projects"></div>
+
     <div ui-view="aboutUs"></div>
+
+    <div ui-view="news"></div>
+
+    <div ui-view="inovationSpace"></div>
+
+    <div ui-view="contact"></div>
 
 </body>
 </html>

@@ -102,16 +102,16 @@ export class StateProvider {
    *
    * $stateProvider.state('home', {
    *   views: {
-   *     'contact.list': { controller: 'ListController' },
-   *     'contact.item': { controller: 'ItemController' }
+   *     'contact.html.list': { controller: 'ListController' },
+   *     'contact.html.item': { controller: 'ItemController' }
    *   }
    * });
    *
    * // ...
    *
    * $state.go('home');
-   * // Auto-populates list and item views with /partials/home/contact/list.html,
-   * // and /partials/home/contact/item.html, respectively.
+   * // Auto-populates list and item views with /partials/home/contact.html/list.html,
+   * // and /partials/home/contact.html/item.html, respectively.
    * </pre>
    *
    * @param {string} name The name of the builder function to decorate.

@@ -13,18 +13,14 @@
             name: 'index',
             url: '/',
             views: {
-                'projects': {'templates/projects.html': projects2},
-                'aboutUs': {'templates/about_us.html': aboutUs}
+                'tour': {templateUrl: 'templates/tour.html', controller: 'tourController as mv'},
+                'projects': {templateUrl:'templates/projects.html', controller: 'projectsController as mv'},
+                'aboutUs': {templateUrl: 'templates/about_us.html', controller: 'aboutUsController as mv'},
+                'news': {templateUrl: 'templates/news.html', controller: 'newscontroller as mv'},
+                'inovationSpace': {templateUrl: 'templates/inovation_space.html', controller: 'inovationController as mv'},
+                'contact': {templateUrl: 'templates/contact.html', controller: 'contactController as mv'},
+
             }
-        };
-
-
-        var admin = {
-            name: 'admin',
-            url: '/admin',
-            templateUrl: 'template/admin.html',
-            controller: 'AdminController as mv'
-
         };
 
         var error404 = {
@@ -33,12 +29,9 @@
             templateUrl: 'template/error404'
         };
 
-
-
-        $stateProvider.state(login);
-        $stateProvider.state(admin);
-        $stateProvider.state(index);
-        //$urlRouterProvider.otherwise('/error404');
+        $stateProvider
+            .state(index);
+        $urlRouterProvider.otherwise('/');
     });
 }());
 

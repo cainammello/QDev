@@ -1,0 +1,181 @@
+/* Head */
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: mintcream;
+    height: 65px;
+}
+
+.nav-item{
+    padding-right: 35px;
+    font-size: 20px
+
+}
+
+.nav-item>a{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.nav-item>a:hover{
+    background-color: #c9302c;
+    color: white;
+    transition: .8s;
+
+
+}
+
+.nave-link{
+
+}
+/* Tour */
+#pageheader_tour{
+    background-color: #563d7c;
+    margin-top: 65px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+}
+
+
+.d-block{
+    border: solid white 2px;
+}
+
+.carousel-inner{
+    height: 360px;
+}
+.carousel-item{
+    width: inherit;
+    overflow: hidden;
+
+}
+
+.carousel-control-prev{
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #7fdbff;
+    width: 100px;
+    height: 100px;
+    line-height:100px;
+    vertical-align:middle;
+    text-align:center;
+    margin-left: 70px;
+    margin-top: 80px;
+}
+
+.carousel-control-next{
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #7fdbff;
+    width: 100px;
+    height: 100px;
+    line-height:100px;
+    vertical-align:middle;
+    text-align:center;
+    margin-right: 60px;
+    margin-top: 80px;
+}
+
+/* Project */
+
+#pageheader_projects{
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+#col_projects{
+    text-align: justify;
+    font-size: 20px;
+}
+
+#col_projects2{
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* About Us */
+
+#pageheader_aboutus{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url("imagens/aboutUsImage.jpg");
+    background-color: white;
+    
+}
+
+.navbar-brand{
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* news */
+#pageheader_news{
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+
+#col_news{
+    text-align: justify;
+    font-size: 20px;
+}
+
+#col_news2{
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* Inovation*/
+
+#pageheader_inovation{
+
+}
+
+#pageheader_image_inovation{
+    background-size: 1350px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 25em;
+    right: 0;
+    top: 0;
+    background-position: center;
+    margin-top: 20px;
+
+}
+
+/*Center */
+#pageheader_contact{
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Contact*/
+
+#contacts{
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+#contacts ul li{
+    display: inline;
+
+}
+
+.imagens-contact{
+    width: 80px;
+    height: 80px;
+}

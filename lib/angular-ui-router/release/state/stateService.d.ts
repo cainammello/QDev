@@ -90,8 +90,8 @@ export declare class StateService {
      *
      * app.controller('ctrl', function ($scope, $state) {
      *   $scope.reload = function(){
-     *     //will reload 'contact.detail' and nested 'contact.detail.item' states
-     *     $state.reload('contact.detail');
+     *     //will reload 'contact.html.detail' and nested 'contact.html.detail.item' states
+     *     $state.reload('contact.html.detail');
      *   }
      * });
      * </pre>
@@ -119,7 +119,7 @@ export declare class StateService {
      *
      * app.controller('ctrl', function ($scope, $state) {
      *   $scope.changeState = function () {
-     *     $state.go('contact.detail');
+     *     $state.go('contact.html.detail');
      *   };
      * });
      * </pre>
@@ -127,7 +127,7 @@ export declare class StateService {
      *
      * @param {string|object} to Absolute state name, state object, or relative state path. Some examples:
      *
-     * - `$state.go('contact.detail')` - will go to the `contact.detail` state
+     * - `$state.go('contact.html.detail')` - will go to the `contact.html.detail` state
      * - `$state.go('^')` - will go to a parent state
      * - `$state.go('^.sibling')` - will go to a sibling state
      * - `$state.go('.child.grandchild')` - will go to grandchild state
@@ -184,7 +184,7 @@ export declare class StateService {
      *
      * app.controller('ctrl', function ($scope, $state) {
      *   $scope.changeState = function () {
-     *     $state.transitionTo('contact.detail');
+     *     $state.transitionTo('contact.html.detail');
      *   };
      * });
      * </pre>
@@ -224,7 +224,7 @@ export declare class StateService {
      * $state.$current.name = 'contacts.details.item';
      *
      * // absolute name
-     * $state.is('contact.details.item'); // returns true
+     * $state.is('contact.html.details.item'); // returns true
      * $state.is(contactDetailItemStateObject); // returns true
      *
      * // relative name (. and ^), typically from a template

@@ -116,8 +116,8 @@ function defaultOpts(el: IAugmentedJQuery, $state: StateService) {
  * <a ui-sref="home">Home</a> | <a ui-sref="about">About</a> | <a ui-sref="{page: 2}">Next page</a>
  *
  * <ul>
- *     <li ng-repeat="contact in contacts">
- *         <a ui-sref="contacts.detail({ id: contact.id })">{{ contact.name }}</a>
+ *     <li ng-repeat="contact.html in contacts">
+ *         <a ui-sref="contacts.detail({ id: contact.html.id })">{{ contact.html.name }}</a>
  *     </li>
  * </ul>
  * </pre>
@@ -131,14 +131,14 @@ function defaultOpts(el: IAugmentedJQuery, $state: StateService) {
  * <a href="#/home" ui-sref="home">Home</a> | <a href="#/about" ui-sref="about">About</a> | <a href="#/contacts?page=2" ui-sref="{page: 2}">Next page</a>
  *
  * <ul>
- *     <li ng-repeat="contact in contacts">
- *         <a href="#/contacts/1" ui-sref="contacts.detail({ id: contact.id })">Joe</a>
+ *     <li ng-repeat="contact.html in contacts">
+ *         <a href="#/contacts/1" ui-sref="contacts.detail({ id: contact.html.id })">Joe</a>
  *     </li>
- *     <li ng-repeat="contact in contacts">
- *         <a href="#/contacts/2" ui-sref="contacts.detail({ id: contact.id })">Alice</a>
+ *     <li ng-repeat="contact.html in contacts">
+ *         <a href="#/contacts/2" ui-sref="contacts.detail({ id: contact.html.id })">Alice</a>
  *     </li>
- *     <li ng-repeat="contact in contacts">
- *         <a href="#/contacts/3" ui-sref="contacts.detail({ id: contact.id })">Bob</a>
+ *     <li ng-repeat="contact.html in contacts">
+ *         <a href="#/contacts/3" ui-sref="contacts.detail({ id: contact.html.id })">Bob</a>
  *     </li>
  * </ul>
  *
