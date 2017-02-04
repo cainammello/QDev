@@ -1,6 +1,6 @@
 <div id="pageheader_contact" class="bd-pageheader" style="text-align: center">
     <div class="container" style="">
-        <h2 style="color: black; font-size: 50px; ">{{nv.contactController.title}}</h2>
+        <h2 style="color: black; font-size: 50px;">{{mv.contactController.title}}</h2>
     </div>
 
     <div class="container" style="border: solid black 2px; height: 50px; margin-top: 40px" >
@@ -10,19 +10,19 @@
     <div id="contacts">
         <ul>
             <li>
-                <img class="imagens-contact" src={{mv.contactController.photos.photoTwitter}}>
+                <img class="imagens-contact" src={{mv.contactController.photos.photoTwitter}} data-toggle="tooltip" data-placement="bottom" title="https://twitter.com/qdev">
             </li>
             <li>
-                <img class="imagens-contact" src="{{mv.contactController.photos.photoGit}}">
+                <img class="imagens-contact" src="{{mv.contactController.photos.photoGit}}" data-toggle="tooltip" data-placement="bottom" title="https://github.com/qdev">
             </li>
             <li>
-                <img class="imagens-contact" src={{mv.contactController.photos.photoWhats}}>
+                <img class="imagens-contact" src={{mv.contactController.photos.photoWhats}} data-toggle="tooltip" data-placement="bottom" title="(88) 98888-8888">
             </li>
             <li>
-                <img class="imagens-contact" src={{mv.contactController.photos.photoFace}}>
+                <img class="imagens-contact" src={{mv.contactController.photos.photoFace}} data-toggle="tooltip" data-placement="bottom" title="www.facebook.com/qdev">
             </li>
             <li>
-                <img class="imagens-contact" src={{mv.contactController.photos.photoSkype}}>
+                <img class="imagens-contact " src={{mv.contactController.photos.photoSkype}} data-toggle="tooltip" data-placement="bottom" title="www.skype.com/qdev">
             </li>
         </ul>
     </div>
@@ -31,7 +31,5 @@
         <p style="padding-top: 20px">
             {{mv.contactController.text.paragraph2}}
         </p>
-
-
     </div>
 </div>

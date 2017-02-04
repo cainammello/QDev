@@ -19,14 +19,13 @@
                 'news': {templateUrl: 'templates/news.html', controller: 'newscontroller as mv'},
                 'inovationSpace': {templateUrl: 'templates/inovation_space.html', controller: 'inovationController as mv'},
                 'contact': {templateUrl: 'templates/contact.html', controller: 'contactController as mv'},
-
             }
         };
 
         var error404 = {
             name: 'error404',
             url: '/error404',
-            templateUrl: 'template/error404'
+            templateUrl: 'templates/contact.html'
         };
 
         $stateProvider
@@ -34,6 +33,3 @@
         $urlRouterProvider.otherwise('/');
     });
 }());
-
-
-

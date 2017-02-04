@@ -8,6 +8,7 @@
 
     <script src="../lib/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="../lib/jquery/dist/jquery.js"></script>
+    <script src="../lib/jquery.scrollTo/jquery.scrollTo.js/"></script>
     <script src="module.js"></script>
     <script src="routes.js"></script>
 
@@ -20,6 +21,7 @@
     <script src="controllers/contact-controller.js"></script>
 
     <script src="assets/js/importHTML.js"></script>
+    <script src="assets/js/redirects.js"></script>
 
     <script src="../lib/tether/dist/js/tether.js"></script>
     <script src="../lib/bootstrap/dist/js/bootstrap.js"></script>
@@ -27,31 +29,62 @@
     <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="../lib/tether/dist/css/tether.css" type="text/css"/>
     <link rel="stylesheet" href="styles/main.css">
-    <!-- BootStrap
-     <script src="../lib/angular-aria/angular-aria.js"></script>
-    <script src="../lib/angular-animate/angular-animate.js"></script>
-    <script src="../lib/angular-material/angular-material.js"></script>
-
-    <link rel="stylesheet" href="../lib/angular-material/angular-material.css">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-    -->
-    <div id="includedContent1"></div>
 
 </head>
 
 <body>
 
-    <div ui-view="tour"></div>
+    <nav class="navbar navbar-toggleable-md navbar-light fixed-top" >
 
-    <div ui-view="projects"></div>
+        <a class="navbar-brand" href="#">
+            <img src="imagens/logo2.png" width="160px" height="80px" href="#tour" id="#mainMenu">
+        </a>
 
-    <div ui-view="aboutUs"></div>
+        <div class="collapse navbar-collapse menu-itens" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
 
-    <div ui-view="news"></div>
+            <ul class="navbar-nav mr-auto mr-sm-2">
+                <li class="nav-item active" >
+                    <a href="#projects">Projects</a>
+                </li>
 
-    <div ui-view="inovationSpace"></div>
+                <li class="nav-item active">
+                    <a href="#aboutUs">Abouts Us</a>
+                </li>
 
-    <div ui-view="contact"></div>
+                <li class="nav-item active" >
+                    <a href="#news">News</a>
+                </li>
+
+                <li class="nav-item active" >
+                    <a href="#inovationSpace" id="inovationSpaceClick">Inovation Space</a>
+                </li>
+
+                <li class="nav-item active" >
+                    <a class="" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!--
+        o arquivo head.html poderia ser inserido da seguinte forma : <div id="includedContent1"></div>
+        porem, o plugin jquery.scrollTo.js não funciona dessa maneira.
+    -->
+
+    <div ui-view="tour" id="tour"></div>
+
+    <div ui-view="projects" id="projects"></div>
+
+    <div ui-view="aboutUs" id="aboutUs"></div>
+
+    <div ui-view="news" id="news"></div>
+
+    <div ui-view="inovationSpace" id="inovationSpace"></div>
+
+    <div ui-view="contact" id="contact"></div>
 
 </body>
 </html>
