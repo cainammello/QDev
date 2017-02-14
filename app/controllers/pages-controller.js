@@ -23,7 +23,6 @@
     }
 
     pagesController.$inject = ['$scope'];
-
     QDev.controller("pagesController", pagesController);
 
 }());
